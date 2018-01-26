@@ -5,13 +5,17 @@ import { DataService } from './services/data.service';
 import { AppComponent } from './app.component';
 import { ShopsListComponent } from './shops-list/shops-list.component';
 import { ShopCardComponent } from './shop-card/shop-card.component';
+import { SectionHeaderComponent } from './section-header/section-header.component';
+import { SearchComponent } from './search/search.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ShopsListComponent,
-    ShopCardComponent
+    ShopCardComponent,
+    SectionHeaderComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

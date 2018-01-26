@@ -4,9 +4,25 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+*:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+input {
+  outline:none;
+  border: none;
+  box-shadow: none;
+  background: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+}
+
 li {
   list-style: none;
 }
+
 body {
   background-color: #ededed;
   font-family: 'Dosis', sans-serif;
