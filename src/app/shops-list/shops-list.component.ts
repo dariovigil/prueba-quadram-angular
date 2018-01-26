@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../services/data.service';
 import { log } from 'util';
+import { ShopCardComponent } from '../shop-card/shop-card.component';
 
 @Component({
   selector: 'app-shops-list',
@@ -14,7 +15,8 @@ export class ShopsListComponent implements OnInit {
 
   ngOnInit() {
     this.dataService.getShops().subscribe(shops => {
-      console.log(shops);
+      this.shops = shops.data;
+      console.log(this.shops);
     });
   }
 

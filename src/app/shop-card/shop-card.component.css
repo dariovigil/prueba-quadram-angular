@@ -1,0 +1,22 @@
+img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 1em;
+}
+
+.shop-name {
+font-weight: 800;
+/* margin: 1em 0 0 1em; */
+}
+
+.shop-name, .valorations {
+  margin-left: 1em;
+}
+
+.shop-card-container {
+  background-color:white;
+  height: 275px;
+  margin-bottom: 1em;
+  text-align: left;
+}
