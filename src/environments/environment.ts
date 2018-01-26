@@ -4,5 +4,8 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  API_URL: 'http://maskowedesa.quadram.mobi/api/v1/stores',
+  API_KEY: 'base64:y7sNK8BCEJThgfxT4eTpXOg34eXk9pmpGMmPNr2zMvM=',
+  APP_VERSION: '0.0.1'
 };
