@@ -1,7 +1,8 @@
 <div>
   <ul>
     <li *ngFor="let shop of shops">
-      <app-shop-card [name]=shop.name [imgSrc]=shop.image [valorations]=shop.valorations></app-shop-card>
+      <app-shop-card [name]=shop.name [imgSrc]=shop.image [valorations]=shop.valorations [likes]=shop.likes>
+    </app-shop-card>
     </li>
   </ul>
 </div>

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../services/data.service';
-import { log } from 'util';
 import { ShopCardComponent } from '../shop-card/shop-card.component';
 
 @Component({

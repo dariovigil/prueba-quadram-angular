@@ -7,7 +7,7 @@ import { ShopsListComponent } from './shops-list/shops-list.component';
 import { ShopCardComponent } from './shop-card/shop-card.component';
 import { SectionHeaderComponent } from './section-header/section-header.component';
 import { SearchComponent } from './search/search.component';
-
+import { LikesComponent } from './likes/likes.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +15,8 @@ import { SearchComponent } from './search/search.component';
     ShopsListComponent,
     ShopCardComponent,
     SectionHeaderComponent,
-    SearchComponent
+    SearchComponent,
+    LikesComponent
   ],
   imports: [
     BrowserModule,
