@@ -8,7 +8,7 @@ import { ShopCardComponent } from './shop-card/shop-card.component';
 import { SectionHeaderComponent } from './section-header/section-header.component';
 import { SearchComponent } from './search/search.component';
 import { LikesComponent } from './likes/likes.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +20,8 @@ import { LikesComponent } from './likes/likes.component';
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    HttpModule,
+    BrowserAnimationsModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

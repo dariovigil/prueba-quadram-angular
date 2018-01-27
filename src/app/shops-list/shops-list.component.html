@@ -1,5 +1,5 @@
 <div>
-  <ul>
+  <ul *ngIf="shops" [@fade]="shops.length">
     <li *ngFor="let shop of shops">
       <app-shop-card [name]=shop.name [imgSrc]=shop.image [valorations]=shop.valorations [likes]=shop.likes>
     </app-shop-card>
