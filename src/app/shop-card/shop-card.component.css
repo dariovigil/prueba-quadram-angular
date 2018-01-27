@@ -9,10 +9,19 @@ img {
 font-weight: 800;
 }
 
-.shop-name, .valorations {
+.shop-name {
   margin-left: 1em;
+  margin-bottom: .1em;
 }
 
+.no-valorations {
+  margin-left: .5em;
+
+}
+.ratings {
+  display: flex;
+  margin-left: .6em;
+}
 .shop-card-container {
   position: relative;
   background-color:white;

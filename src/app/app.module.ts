@@ -9,6 +9,7 @@ import { SectionHeaderComponent } from './section-header/section-header.componen
 import { SearchComponent } from './search/search.component';
 import { LikesComponent } from './likes/likes.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { StarRatingModule } from 'angular-star-rating';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     HttpModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    StarRatingModule.forRoot()
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

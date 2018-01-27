@@ -4,8 +4,9 @@
   <p class="shop-name">
     {{name}}
   </p>
-  <p class="valorations">
-    *****
-    ({{valorations}} Valoraciones)
-  </p>
+  <div class="ratings">
+      <star-rating-comp *ngIf="valorations" [starType]="'svg'" [rating]=rateToStars></star-rating-comp>
+      <span *ngIf="valorations">({{valorations}} Valoraciones)</span>
+      <span class="no-valorations" *ngIf="!valorations">Aún no hay valoraciones</span>
+  </div>
 </div>
