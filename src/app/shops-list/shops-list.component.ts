@@ -10,12 +10,12 @@ import { ShopCardComponent } from '../shop-card/shop-card.component';
   animations: [
     trigger('fade', [
       transition('* => *', [
-        query(':enter', style({ opacity: 0 }), {optional: true}),
+        query(':enter', style({ opacity: 0 }), { optional: true }),
         query(':enter', stagger('300ms', [
           animate('1s ease-in', keyframes([
-            style({opacity: 0, offset: 0}),
-            style({opacity: 1, offset: 1.0}),
-          ]))]), {optional: true})
+            style({ opacity: 0, offset: 0 }),
+            style({ opacity: 1, offset: 1.0 }),
+          ]))]), { optional: true })
       ])
     ])
 
@@ -23,22 +23,13 @@ import { ShopCardComponent } from '../shop-card/shop-card.component';
 })
 export class ShopsListComponent implements OnInit {
   shops: Array<any>;
-  userLocation: any;
 
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(position => {
-        this.userLocation = position.coords;
-        console.log(position.coords);
-      });
-   }
-
     this.dataService.getShops().subscribe(shops => {
       this.shops = shops.data;
       console.log(this.shops);
     });
   }
-
 }
