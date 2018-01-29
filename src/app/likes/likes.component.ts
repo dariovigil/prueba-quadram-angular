@@ -7,9 +7,16 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class LikesComponent implements OnInit {
   @Input() likes: number;
+  isFav = false;
+  toggle(event) {
+    this.isFav = !this.isFav;
+    event.target.classList.toggle('animated');
+    event.target.classList.toggle('bounceIn');
+
+
+  }
   constructor() { }
 
   ngOnInit() {
   }
-
 }

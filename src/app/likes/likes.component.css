@@ -9,6 +9,7 @@
   padding: 4px 0;
   border-radius: 0 0 30px 30px;
   align-items: center;
+  cursor: pointer;
 }
 .fa-heart-o, .fa-heart {
   color: #4fe479;

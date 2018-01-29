@@ -1,4 +1,4 @@
-<div class="likes-container">
-    <i class="fa fa-heart-o" aria-hidden="true"></i>
+<div class="likes-container" (click)="toggle($event)">
+    <i class="fa" aria-hidden="true" [class.fa-heart]="isFav" [class.fa-heart-o]="!isFav"></i>
     <span class="likes-text">{{likes}}</span>
 </div>

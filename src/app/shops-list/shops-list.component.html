@@ -1,7 +1,10 @@
 <div>
   <ul *ngIf="shops" [@fade]="shops.length">
     <li *ngFor="let shop of shops">
-      <app-shop-card [name]=shop.name [imgSrc]=shop.image [valorations]=shop.valorations [likes]=shop.likes [rate]=shop.rate>
+      <app-shop-card
+       [name]=shop.name [imgSrc]=shop.image [valorations]=shop.valorations
+       [likes]=shop.likes [rate]=shop.rate [userLocation]=userLocation
+       [shopLong]=shop.longitude [shopLat]=shop.latitude>
     </app-shop-card>
     </li>
   </ul>

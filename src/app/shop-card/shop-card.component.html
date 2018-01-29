@@ -8,5 +8,8 @@
       <star-rating-comp *ngIf="valorations" [starType]="'svg'" [rating]=rateToStars></star-rating-comp>
       <span *ngIf="valorations">({{valorations}} Valoraciones)</span>
       <span class="no-valorations" *ngIf="!valorations">Aún no hay valoraciones</span>
-  </div>
+      <span >{{distanceToStore}}Km</span>
+    </div>
+  <!-- <p>{{shopLong}}</p> -->
+  <!-- <p>{{shopLat}}</p> -->
 </div>

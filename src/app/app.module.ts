@@ -10,6 +10,7 @@ import { SearchComponent } from './search/search.component';
 import { LikesComponent } from './likes/likes.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StarRatingModule } from 'angular-star-rating';
+import { DistanceService } from './services/distance.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,7 @@ import { StarRatingModule } from 'angular-star-rating';
     BrowserAnimationsModule,
     StarRatingModule.forRoot()
   ],
-  providers: [DataService],
+  providers: [DataService, DistanceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
